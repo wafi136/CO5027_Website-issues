@@ -11,7 +11,7 @@ namespace Website_Ecom
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string prod_id = Request.QueryString["prod_id"];
+            string prod_id = Request.QueryString["prod_id"]; 
             string filename = prod_id + ".jpg";
 
             Img.ImageUrl = "~/imgproduct/" + filename;
