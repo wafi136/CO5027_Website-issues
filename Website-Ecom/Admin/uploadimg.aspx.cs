@@ -23,6 +23,7 @@ namespace Website_Ecom
             string filename = prod_id + ".jpg";
             string savelocation = Server.MapPath("~/imgproduct/"+ filename);
             imgupcontrol.SaveAs(savelocation);
+            //* Test
         }
     }
 }
