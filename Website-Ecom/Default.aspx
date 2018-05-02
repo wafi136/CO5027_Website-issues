@@ -1,42 +1,34 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Website_Ecom._Default" %>
-
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Main.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Website_Ecom.DefaultView" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+  
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <table align ="center">
+	  <img  class ="logopic" src="imgproduct/logo.jpg"> 
+	<tr>
+	<td><p> <h1>It’s YOU that matters.</h1></p>
+			GIGABYTE is always consumer-oriented from the very beginning of product design to the end of value chain. With the focus on consumer needs, the delivery of customer experiences has been transformed into tangible and understood customer cares. Therefore, GIGABYTE has integrated the best quality of components to ensure outstanding stability and reliability and also built up a complete service network with hundreds of customer service centers around the globe. Behind everything we do is a clear focus on what our customers value. GIGABYTE has kept staying one step ahead of consumer desires to create unique connections and pursue your smile of satisfaction.
+    </td>
+	<td> <img src="imgproduct/concept.jpg" class ="firstpic"></td>
+	</tr>       
+    </table>
+    <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">
+        <HeaderTemplate>  
+        </HeaderTemplate>
+        <ItemTemplate>
+          <div id="background-product">
+                    <ul>
+                        <li>
+                            <p><asp:Image ID="Img" runat="server"  height="500" width="500" ImageUrl='<%#"~/imgproduct/" + Eval("prod_id")+ ".jpg"%>'/></p>
+                            <p><a href="<%#Eval("prod_id","product.aspx?prod_id={0}") %>"><%#Eval("prod_nm") %></a></p>
+                         </li>
+                   </ul>
+            </div>
+        </ItemTemplate>
+        <FooterTemplate>    
+        </FooterTemplate>
+    </asp:Repeater>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:WafiConnectionString %>" SelectCommand="SELECT * FROM [prod_tbl] WHERE Quantity&gt;0;"></asp:SqlDataSource>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder_Map" runat="server">
 </asp:Content>

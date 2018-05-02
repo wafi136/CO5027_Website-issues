@@ -15,11 +15,12 @@
 	 <p> <img  class ="logopic" src="imgproduct/logo.jpg"> </p>
 	<tr>
 	<td class="auto-style1"> <h1>Location</h1>
-        <p>  <div id ="map">
+        <p>  
+            <div id ="map">
             <script src="map.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNjaDTK6ooFQWSIbGmhJ7ty-_7ehT_D3Q&callback=initMap">
-    </script>d
+    </script>
         </div></p>
     
 	</td>

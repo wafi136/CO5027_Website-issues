@@ -48,6 +48,14 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PayPal, Version=1.9.1.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PayPal.1.9.1\lib\net451\PayPal.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -90,10 +98,6 @@
     <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <Private>True</Private>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
       <Private>True</Private>
@@ -171,27 +175,36 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\add.aspx" />
+    <Content Include="Admin\index.aspx" />
     <Content Include="Admin\list.aspx" />
-    <Content Include="Contact3.aspx" />
+    <Content Include="cancel.aspx" />
+    <Content Include="completepurchase.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\style.css" />
     <Content Include="Admin\edit.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Default2.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="imgproduct\1.png" />
+    <Content Include="imgproduct\101.jpg" />
+    <Content Include="imgproduct\11.jpg" />
+    <Content Include="imgproduct\199.jpg" />
     <Content Include="imgproduct\2.png" />
+    <Content Include="imgproduct\22.jpg" />
     <Content Include="imgproduct\3.jpg" />
     <Content Include="imgproduct\4.gif" />
     <Content Include="imgproduct\5.gif" />
     <Content Include="imgproduct\6.gif" />
     <Content Include="imgproduct\7.png" />
     <Content Include="imgproduct\8.png" />
+    <Content Include="imgproduct\990x-gaming sli.png" />
     <Content Include="imgproduct\action_bg.jpg" />
     <Content Include="imgproduct\concept.jpg" />
     <Content Include="imgproduct\gaming_bg.jpg" />
@@ -203,6 +216,11 @@
     <Content Include="imgproduct\X299 Taichi XE%28M1%29.png" />
     <Content Include="imgproduct\you_bg.jpg" />
     <Content Include="imgproduct\Z170 Pro4.png" />
+    <Content Include="imgproduct\z170x -ultra gaming.jpg" />
+    <Content Include="imgproduct\z170x-gaming 3.gif" />
+    <Content Include="imgproduct\z170x-gaming 5.gif" />
+    <Content Include="imgproduct\z170x-gaming g1.gif" />
+    <Content Include="imgproduct\z170x-gaming gt.png" />
     <Content Include="imgproduct\Z270 Pro4.png" />
     <Content Include="imgproduct\Z370 Pro4%28M1%29.png" />
     <Content Include="Login.aspx" />
@@ -210,9 +228,12 @@
     <Content Include="Admin\Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="WebForm1.aspx" />
+    <None Include="Properties\PublishProfiles\customprofile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="map.js" />
     <Content Include="product.aspx" />
+    <Content Include="product2.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -242,7 +263,6 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
@@ -378,6 +398,13 @@
     <Compile Include="Admin\add.aspx.designer.cs">
       <DependentUpon>add.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\list.aspx.cs">
       <DependentUpon>list.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -396,12 +423,19 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Contact3.aspx.cs">
-      <DependentUpon>Contact3.aspx</DependentUpon>
+    <Compile Include="cancel.aspx.cs">
+      <DependentUpon>cancel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact3.aspx.designer.cs">
-      <DependentUpon>Contact3.aspx</DependentUpon>
+    <Compile Include="cancel.aspx.designer.cs">
+      <DependentUpon>cancel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="completepurchase.aspx.cs">
+      <DependentUpon>completepurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="completepurchase.aspx.designer.cs">
+      <DependentUpon>completepurchase.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -410,6 +444,13 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\edit.aspx.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\edit.aspx.designer.cs">
+      <DependentUpon>edit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -417,12 +458,12 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\edit.aspx.cs">
-      <DependentUpon>edit.aspx</DependentUpon>
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\edit.aspx.designer.cs">
-      <DependentUpon>edit.aspx</DependentUpon>
+    <Compile Include="Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -448,6 +489,13 @@
     </Compile>
     <Compile Include="product.aspx.designer.cs">
       <DependentUpon>product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="product2.aspx.cs">
+      <DependentUpon>product2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="product2.aspx.designer.cs">
+      <DependentUpon>product2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -479,10 +527,18 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="fonts\NewFolder1\" />
+    <Folder Include="Registered user\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

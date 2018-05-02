@@ -26,6 +26,7 @@ namespace Website_Ecom
             if (user != null)
             {
                 LogUserIn(userManager, user);
+                litLog.Text = "Success login";
             }
             else
             {
@@ -38,13 +39,22 @@ namespace Website_Ecom
             var userIdentity = usermanager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
             authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
 
-            if (Request.QueryString["ReturnUrl"] != null)
+            if (Request.QueryString["~/Login.aspx"] != null)
             {
-                Response.Redirect(Request.QueryString["ReturnUrl"]);
+                Response.Redirect(Request.QueryString["~/Login.aspx"]);
+            }
+            else
+            {
+                String userRoles = usermanager.GetRoles(user.Id).FirstOrDefault();
+                if (userRoles.Equals("Admin"))
+                {
+                    Response.Redirect("~/Admin/index.aspx");
+                }
             }
         }
 
-        protected void btnReg_Click(object sender, EventArgs e)
+       
+        protected void btnRegist_Click(object sender, EventArgs e)
         {
             var identityDbContext = new IdentityDbContext("WafiConnectionString");
             var roleStore = new RoleStore<IdentityRole>(identityDbContext);
