@@ -16,7 +16,7 @@
                <asp:Literal ID="litLog" runat="server"></asp:Literal>
 	        </td>
 	        <td>
-           <h2>Register</h2>
+           <h2>Register</h2> 
         	    <asp:Label ID="Label3" runat="server" Text="Username"></asp:Label>
                 <asp:TextBox ID="txtEmail2" runat="server"></asp:TextBox>
 	            <asp:Label ID="Label4" runat="server" Text="Password"></asp:Label>
