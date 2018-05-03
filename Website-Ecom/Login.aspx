@@ -28,7 +28,6 @@
 	        </td>
 	        </tr>
 </table>
-
   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder_Map" runat="server">
