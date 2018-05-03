@@ -18,7 +18,7 @@
         <ItemTemplate>
           <div id="background-product">
                     <ul>
-                        <li>
+                        <li> 
                             <p><asp:Image ID="Img" runat="server"  height="500" width="500" ImageUrl='<%#"~/imgproduct/" + Eval("prod_id")+ ".jpg"%>' Alt="ImgProd"/></p>
                             <p><a href="<%#Eval("prod_id","product.aspx?prod_id={0}") %>"><%#Eval("prod_nm") %></a></p>
                          </li>
