@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   
+   <title> Gigabyte Store</title>
      <link rel="stylesheet" href="css/style.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -18,11 +18,10 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="Default.aspx">Home</a></li>
-                        <li><a runat="server" href="product.aspx">Product</a></li>
-                        <li><a runat="server" href="about.aspx">About</a></li>
                         <li><a runat="server" href="Login.aspx">Login/Register</a></li>
                         <li><a runat="server" href="Contact.aspx">Contact</a></li>
                     </ul>
+                   
                 
                 </div>
             </div>
@@ -36,8 +35,11 @@
       <asp:ContentPlaceHolder ID="ContentPlaceHolder_Map" runat="server">
         
         </asp:ContentPlaceHolder>
-</body>
-    <footer><a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> |
+    <footer>
+        <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a> |
             <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a> |
-            <a href="Admin/">Admin</a> </footer>
+            <a href="Admin/">Admin</a>
+    </footer>
+</body>
+
 </html>

@@ -62,7 +62,7 @@ namespace Website_Ecom
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
 
-            IdentityRole adminRole = new IdentityRole("Customer");
+            IdentityRole adminRole = new IdentityRole("RegisteredUser");
             roleManager.Create(adminRole);
             var user = new IdentityUser()
             {
@@ -73,7 +73,7 @@ namespace Website_Ecom
             IdentityResult result = manager.Create(user, txtPsd2.Text);
             if (result.Succeeded)
             {
-                manager.AddToRole(user.Id, "Customer");
+                manager.AddToRole(user.Id, "RegisteredUser");
                 manager.Update(user);
                 LitRegisterError2.Text = "Registration successfully"; //todo:Log in Then
             }

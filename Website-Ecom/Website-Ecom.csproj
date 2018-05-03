@@ -158,7 +158,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -186,54 +185,35 @@
     <Content Include="css\style.css" />
     <Content Include="Admin\edit.aspx" />
     <Content Include="Default.aspx" />
-    <Content Include="Default2.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
-    <Content Include="imgproduct\1.png" />
-    <Content Include="imgproduct\101.jpg" />
-    <Content Include="imgproduct\11.jpg" />
-    <Content Include="imgproduct\199.jpg" />
-    <Content Include="imgproduct\2.png" />
-    <Content Include="imgproduct\22.jpg" />
-    <Content Include="imgproduct\3.jpg" />
-    <Content Include="imgproduct\4.gif" />
-    <Content Include="imgproduct\5.gif" />
-    <Content Include="imgproduct\6.gif" />
-    <Content Include="imgproduct\7.png" />
-    <Content Include="imgproduct\8.png" />
     <Content Include="imgproduct\990x-gaming sli.png" />
-    <Content Include="imgproduct\action_bg.jpg" />
     <Content Include="imgproduct\concept.jpg" />
-    <Content Include="imgproduct\gaming_bg.jpg" />
+    <Content Include="imgproduct\GA-990FX-Gaming.png" />
+    <Content Include="imgproduct\GA-X99M-Gaming 5.png" />
+    <Content Include="imgproduct\GA-Z270X-Gaming SOC.png" />
     <Content Include="imgproduct\logo.jpg" />
-    <Content Include="imgproduct\msi-z270_sli-tuning-hero.png" />
-    <Content Include="imgproduct\n1.png" />
-    <Content Include="imgproduct\n2.png" />
-    <Content Include="imgproduct\n3.png" />
-    <Content Include="imgproduct\X299 Taichi XE%28M1%29.png" />
-    <Content Include="imgproduct\you_bg.jpg" />
+    <Content Include="imgproduct\x99 gaming.png" />
     <Content Include="imgproduct\Z170 Pro4.png" />
     <Content Include="imgproduct\z170x -ultra gaming.jpg" />
     <Content Include="imgproduct\z170x-gaming 3.gif" />
     <Content Include="imgproduct\z170x-gaming 5.gif" />
     <Content Include="imgproduct\z170x-gaming g1.gif" />
     <Content Include="imgproduct\z170x-gaming gt.png" />
-    <Content Include="imgproduct\Z270 Pro4.png" />
-    <Content Include="imgproduct\Z370 Pro4%28M1%29.png" />
     <Content Include="Login.aspx" />
     <Content Include="Main.Master" />
     <Content Include="Admin\Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Static map\static map.PNG" />
     <Content Include="WebForm1.aspx" />
     <None Include="Properties\PublishProfiles\customprofile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="map.js" />
     <Content Include="product.aspx" />
-    <Content Include="product2.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -413,13 +393,6 @@
       <DependentUpon>list.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
@@ -458,13 +431,6 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default2.aspx.cs">
-      <DependentUpon>Default2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default2.aspx.designer.cs">
-      <DependentUpon>Default2.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -489,13 +455,6 @@
     </Compile>
     <Compile Include="product.aspx.designer.cs">
       <DependentUpon>product.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="product2.aspx.cs">
-      <DependentUpon>product2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="product2.aspx.designer.cs">
-      <DependentUpon>product2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

@@ -60,6 +60,8 @@
         
     <asp:Label ID="Label1" runat="server" Text="Back to Main page"><a href="index.aspx">Back to Main page</asp:Label>
     <br />
+    <asp:Button ID="BtnLogOut2" runat="server" OnClick="BtnLogOut2_Click" Text="Log Out" />
+    <br />
         
            
         

@@ -6,6 +6,22 @@ ul {
     background-color: #333;
 }
 
+.auto-style1 {
+            width: 569px;
+}
+.auto-style3 {
+            width: 314px;
+}
+.auto-style4 {
+            text-align: center;
+}
+
+.auto-style5 {
+            background-position: center;
+}
+.auto-style6 {
+    height: 108px;
+}
 li {
 
    float:left; 
@@ -33,6 +49,11 @@ table th, tr,td{
 	border: 1px solid #2980B9;
 }
 
+.tableContent{
+    margin:auto;
+    width:20%;
+    padding:50px;
+}
 th,td{
 	padding:5x;
 	text-align:center;
@@ -41,6 +62,10 @@ th,td{
 	width:200px;
 	height:200px;
 }
+#Image2{
+  
+}
+
 .logopic{
 	display:block;
 	margin-left:auto;
@@ -56,8 +81,17 @@ th,td{
 	height:100%;
 }
 
+.MainContent{
+
+}
+
 #map{
-    width :600px;
+    width :700px;
+    height:300px;
+}
+
+.staticmp{
+    width :1000px;
     height:300px;
 }
 
@@ -67,9 +101,6 @@ th,td{
    width: 33%; 
 }
 
-#background-product ul li {
-
-}
 
 .product-container{
     height:auto;
@@ -84,4 +115,8 @@ th,td{
     margin-right:860px;
     margin-top:100px;
      
+}
+.admintable{
+     margin:auto;
+    width:50%;
 }
