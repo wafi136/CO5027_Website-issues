@@ -3,13 +3,13 @@
   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <img  class ="logopic" src="imgproduct/logo.jpg" alt="LogoPic"> 
+      <img  class ="logopic" src="imgproduct/logo.jpg" alt="LogoPic"/> 
     <table class="MainContent" >
 	<tr>
 	<td> <h1>It’s YOU that matters.</h1>
 			GIGABYTE is always consumer-oriented from the very beginning of product design to the end of value chain. With the focus on consumer needs, the delivery of customer experiences has been transformed into tangible and understood customer cares. Therefore, GIGABYTE has integrated the best quality of components to ensure outstanding stability and reliability and also built up a complete service network with hundreds of customer service centers around the globe. Behind everything we do is a clear focus on what our customers value. GIGABYTE has kept staying one step ahead of consumer desires to create unique connections and pursue your smile of satisfaction.
     </td>
-	<td> <img src="imgproduct/concept.jpg" class ="firstpic" alt=""></td>
+	<td> <img src="imgproduct/concept.jpg" class ="firstpic" alt="Pic1"/></td>
 	</tr>       
     </table>
     <asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource1">

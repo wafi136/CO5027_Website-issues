@@ -3,7 +3,7 @@
  
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <img  class ="logopic" src="imgproduct/logo.jpg" alt="LogoPic"> 
+    <img  class ="logopic" src="imgproduct/logo.jpg" alt="LogoPic"/> 
     <table class="tableContent">
 	<tr>
 	<td class="auto-style1"> <h1>Location</h1>

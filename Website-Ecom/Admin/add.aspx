@@ -10,35 +10,35 @@
                 <p><asp:Label ID="prod_idLabel1" runat="server" Text='<%# Eval("prod_id") %>' />
                 </p>
                 <p>prod_nm:</p>
-                <p><asp:TextBox ID="prod_nmTextBox" runat="server" Text='<%# Bind("prod_nm") %>' />
+                <p><asp:TextBox ID="prod_nmTextBox" runat="server" Text='<%# Eval("prod_nm") %>' />
                 </p>
                 prod_prc:
-                <p><asp:TextBox ID="prod_prcTextBox" runat="server" Text='<%# Bind("prod_prc") %>' />
+                <p><asp:TextBox ID="prod_prcTextBox" runat="server" Text='<%# Eval("prod_prc") %>' />
                 </p>
                 <p>Quantity:</p>
-                <p><asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
+                <p><asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Eval("Quantity") %>' />
                 </p>
                 <p>Description:</p>
-                <p><asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
+                <p><asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Eval("Description") %>' />
                 </p>
                 <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
                 <asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </EditItemTemplate>
             <InsertItemTemplate>
                 <p>prod_id:</p>
-                <p><asp:TextBox ID="prod_idTextBox" runat="server" Text='<%# Bind("prod_id") %>' />
+                <p><asp:TextBox ID="prod_idTextBox" runat="server" Text='<%# Eval("prod_id") %>' />
                 </p>
                 prod_nm:
-                <p><asp:TextBox ID="prod_nmTextBox" runat="server" Text='<%# Bind("prod_nm") %>' />
+                <p><asp:TextBox ID="prod_nmTextBox" runat="server" Text='<%# Eval("prod_nm") %>' />
                 </p>
                 <p>prod_prc:</p>
-                <p><asp:TextBox ID="prod_prcTextBox" runat="server" Text='<%# Bind("prod_prc") %>' />
+                <p><asp:TextBox ID="prod_prcTextBox" runat="server" Text='<%# Eval("prod_prc") %>' />
                 </p>
                 <p>Quantity:</p>
-                <p><asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Bind("Quantity") %>' />
+                <p><asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Eval("Quantity") %>' />
                 </p>
                 <p>Description:</p>
-                <p><asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Bind("Description") %>' />
+                <p><asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Eval("Description") %>' />
                 </p>
                 <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                 <asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
@@ -48,16 +48,16 @@
                 <p><asp:Label ID="prod_idLabel" runat="server" Text='<%# Eval("prod_id") %>' />
                 </p>
                 prod_nm:
-                <p><asp:Label ID="prod_nmLabel" runat="server" Text='<%# Bind("prod_nm") %>' />
+                <p><asp:Label ID="prod_nmLabel" runat="server" Text='<%# Eval("prod_nm") %>' />
                 </p>
                 <p>prod_prc:</p>
-                <p><asp:Label ID="prod_prcLabel" runat="server" Text='<%# Bind("prod_prc") %>' />
+                <p><asp:Label ID="prod_prcLabel" runat="server" Text='<%# Eval("prod_prc") %>' />
                 </p>
                 <p>Quantity:</p>
-                <p><asp:Label ID="QuantityLabel" runat="server" Text='<%# Bind("Quantity") %>' />
+                <p><asp:Label ID="QuantityLabel" runat="server" Text='<%# Eval("Quantity") %>' />
                 </p>
                <p> Description:</p>
-                <p><asp:Label ID="DescriptionLabel" runat="server" Text='<%# Bind("Description") %>' />
+                <p><asp:Label ID="DescriptionLabel" runat="server" Text='<%# Eval("Description") %>' />
                 </p>
                 <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
                 <asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
@@ -87,7 +87,7 @@
                 <asp:Parameter Name="original_Quantity" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-    </p>
+    
     <p>
         <asp:Label ID="Label1" runat="server" Text="Back to Main page"><a href="index.aspx">Back to Main page</a></asp:Label>
     </p>

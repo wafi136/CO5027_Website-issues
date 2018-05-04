@@ -10,7 +10,7 @@
 	</td>
         <td class="auto-style6"> <h2><a href="add.aspx"><span class="auto-style1">New Product </span></a></h2>This action to add new data into the database.
         </td>
-	<td class="auto-style6"> <a href="add.aspx"><asp:Button ID="btnLogOut" runat="server" Text="Log Out" OnClick="btnLogOut_Click" />
+	<td class="auto-style6"> <a href="add.aspx"><asp:Button ID="btnLogOut" runat="server" Text="Log Out" OnClick="btnLogOut_Click" /></a>
         </td>
 	</tr>
 </table>
