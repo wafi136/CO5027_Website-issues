@@ -5,58 +5,58 @@
     <asp:FormView ID="FormView1" runat="server" DataKeyNames="prod_id" DataSourceID="SqlDataSource1" DefaultMode="Edit">
     <EditItemTemplate>
         prod_id:
-        <asp:Label ID="prod_idLabel1" runat="server" Text='<%# Eval("prod_id") %>' />
-        <br />
+        <p><asp:Label ID="prod_idLabel1" runat="server" Text='<%# Eval("prod_id") %>' />
+        </p>
         prod_nm:
-        <asp:TextBox ID="prod_nmTextBox" runat="server" Text='<%# Eval("prod_nm") %>' />
-        <br />
+        <p><asp:TextBox ID="prod_nmTextBox" runat="server" Text='<%# Eval("prod_nm") %>' />
+        </p>
         prod_prc:
-        <asp:TextBox ID="prod_prcTextBox" runat="server" Text='<%# Eval("prod_prc") %>' />
-        <br />
+        <p><asp:TextBox ID="prod_prcTextBox" runat="server" Text='<%# Eval("prod_prc") %>' />
+        </p>
         Quantity:
-        <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Eval("Quantity") %>' />
-        <br />
+        <p><asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Eval("Quantity") %>' />
+        </p>
         Description:
-        <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Eval("Description") %>' />
-        <br />
+        <p><asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Eval("Description") %>' />
+        </p>
         <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-        &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+        <asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
     </EditItemTemplate>
     <InsertItemTemplate>
         prod_id:
-        <asp:TextBox ID="prod_idTextBox" runat="server" Text='<%# Eval("prod_id") %>' />
-        <br />
+        <p><asp:TextBox ID="prod_idTextBox" runat="server" Text='<%# Eval("prod_id") %>' />
+        </p>
         prod_nm:
-        <asp:TextBox ID="prod_nmTextBox" runat="server" Text='<%# Eval("prod_nm") %>' />
-        <br />
+        <p><asp:TextBox ID="prod_nmTextBox" runat="server" Text='<%# Eval("prod_nm") %>' />
+        </p>
         prod_prc:
-        <asp:TextBox ID="prod_prcTextBox" runat="server" Text='<%# Eval("prod_prc") %>' />
-        <br />
+        <p><asp:TextBox ID="prod_prcTextBox" runat="server" Text='<%# Eval("prod_prc") %>' />
+        </p>
         Quantity:
-        <asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Eval("Quantity") %>' />
-        <br />
+        <p><asp:TextBox ID="QuantityTextBox" runat="server" Text='<%# Eval("Quantity") %>' />
+        </p>
         Description:
-        <asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Eval("Description") %>' />
-        <br />
+        <p><asp:TextBox ID="DescriptionTextBox" runat="server" Text='<%# Eval("Description") %>' />
+        </p>
         <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
         &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
     </InsertItemTemplate>
     <ItemTemplate>
         prod_id:
-        <asp:Label ID="prod_idLabel" runat="server" Text='<%# Eval("prod_id") %>' />
-        <br />
+        <p><asp:Label ID="prod_idLabel" runat="server" Text='<%# Eval("prod_id") %>' />
+        </p>
         prod_nm:
-        <asp:Label ID="prod_nmLabel" runat="server" Text='<%# Eval("prod_nm") %>' />
-        <br />
+        <p><asp:Label ID="prod_nmLabel" runat="server" Text='<%# Eval("prod_nm") %>' />
+        </p>
         prod_prc:
-        <asp:Label ID="prod_prcLabel" runat="server" Text='<%# Eval("prod_prc") %>' />
-        <br />
+        <p><asp:Label ID="prod_prcLabel" runat="server" Text='<%# Eval("prod_prc") %>' />
+       </p>
         Quantity:
-        <asp:Label ID="QuantityLabel" runat="server" Text='<%# Eval("Quantity") %>' />
-        <br />
+        <p><asp:Label ID="QuantityLabel" runat="server" Text='<%# Eval("Quantity") %>' />
+        </p>
         Description:
-        <asp:Label ID="DescriptionLabel" runat="server" Text='<%# Eval("Description") %>' />
-        <br />
+        <p><asp:Label ID="DescriptionLabel" runat="server" Text='<%# Eval("Description") %>' />
+       </p>
         <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Edit" />
         &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Delete" />
         &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="New" />
